@@ -26,103 +26,126 @@
                 <div class="entries">
                     <article class="entry entry-single">
 
-                        <div class="entry-img">
-                            <img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-                        </div>
+                        <!-- ======= Features Section ======= -->
+                        <section class="features">
+                            <div class="container">
 
-                        <h2 class="entry-title">
-                            <a href="blog-single.html">Dolorum optio tempore voluptas dignissimos cumque fuga qui
-                                quibusdam quia</a>
-                        </h2>
+                                <div class="section-title">
+                                    <h2>Features</h2>
+                                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum
+                                        quidem. Sit sint
+                                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
+                                        alias ea. Quia
+                                        fugiat
+                                        sit in iste officiis commodi quidem hic quas.</p>
+                                </div>
 
-                        <div class="entry-meta">
-                            <ul>
-                                <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a
-                                        href="blog-single.html">John Doe</a></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a
-                                        href="blog-single.html"><time datetime="2020-01-01">Jan 1, 2020</time></a></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i> <a
-                                        href="blog-single.html">12 Comments</a></li>
-                            </ul>
-                        </div>
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col-md-5">
+                                        <img src="{{ url('/moderna/assets/img/features-1.svg') }}" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-7 pt-4">
+                                        <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                                        <p class="fst-italic">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut
+                                            labore
+                                            et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <ul>
+                                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat.</li>
+                                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in
+                                                voluptate velit.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                        <div class="entry-content">
-                            <p>
-                                Similique neque nam consequuntur ad non maxime aliquam quas. Quibusdam animi
-                                praesentium. Aliquam et laboriosam eius aut nostrum quidem aliquid dicta.
-                                Et eveniet enim. Qui velit est ea dolorem doloremque deleniti aperiam unde soluta. Est
-                                cum et quod quos aut ut et sit sunt. Voluptate porro consequatur assumenda perferendis
-                                dolore.
-                            </p>
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col-md-5 order-1 order-md-2">
+                                        <img src="{{ url('/moderna/assets/img/features-2.svg') }}" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-7 pt-5 order-2 order-md-1">
+                                        <h3>Corporis temporibus maiores provident</h3>
+                                        <p class="fst-italic">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut
+                                            labore
+                                            et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                            in reprehenderit
+                                            in
+                                            voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat non
+                                            proident,
+                                            sunt in
+                                            culpa qui officia deserunt mollit anim id est laborum
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <p>
-                                Sit repellat hic cupiditate hic ut nemo. Quis nihil sunt non reiciendis. Sequi in
-                                accusamus harum vel aspernatur. Excepturi numquam nihil cumque odio. Et voluptate
-                                cupiditate.
-                            </p>
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col-md-5">
+                                        <img src="{{ url('/moderna/assets/img/features-3.svg') }}" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-7 pt-5">
+                                        <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
+                                        <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod.
+                                            Sunt saepe odit
+                                            aut
+                                            quia voluptatem hic voluptas dolor doloremque.</p>
+                                        <ul>
+                                            <li><i class="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo
+                                                consequat.</li>
+                                            <li><i class="bi bi-check"></i> Duis aute irure dolor in reprehenderit in
+                                                voluptate velit.
+                                            </li>
+                                            <li><i class="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem
+                                                soluta ad fugiat.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
-                            <blockquote>
-                                <p>
-                                    Et vero doloremque tempore voluptatem ratione vel aut. Deleniti sunt animi aut. Aut
-                                    eos aliquam doloribus minus autem quos.
-                                </p>
-                            </blockquote>
+                                <div class="row" data-aos="fade-up">
+                                    <div class="col-md-5 order-1 order-md-2">
+                                        <img src="{{ url('/moderna/assets/img/features-4.svg') }}" class="img-fluid"
+                                            alt="">
+                                    </div>
+                                    <div class="col-md-7 pt-5 order-2 order-md-1">
+                                        <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+                                        <p class="fst-italic">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                            incididunt ut
+                                            labore
+                                            et dolore
+                                            magna aliqua.
+                                        </p>
+                                        <p>
+                                            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                            in reprehenderit
+                                            in
+                                            voluptate
+                                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                            cupidatat non
+                                            proident,
+                                            sunt in
+                                            culpa qui officia deserunt mollit anim id est laborum
+                                        </p>
+                                    </div>
+                                </div>
 
-                            <p>
-                                Sed quo laboriosam qui architecto. Occaecati repellendus omnis dicta inventore tempore
-                                provident voluptas mollitia aliquid. Id repellendus quia. Asperiores nihil magni dicta
-                                est suscipit perspiciatis. Voluptate ex rerum assumenda dolores nihil quaerat.
-                                Dolor porro tempora et quibusdam voluptas. Beatae aut at ad qui tempore corrupti velit
-                                quisquam rerum. Omnis dolorum exercitationem harum qui qui blanditiis neque.
-                                Iusto autem itaque. Repudiandae hic quae aspernatur ea neque qui. Architecto voluptatem
-                                magni. Vel magnam quod et tempora deleniti error rerum nihil tempora.
-                            </p>
-
-                            <h3>Et quae iure vel ut odit alias.</h3>
-                            <p>
-                                Officiis animi maxime nulla quo et harum eum quis a. Sit hic in qui quos fugit ut rerum
-                                atque. Optio provident dolores atque voluptatem rem excepturi molestiae qui. Voluptatem
-                                laborum omnis ullam quibusdam perspiciatis nulla nostrum. Voluptatum est libero eum
-                                nesciunt aliquid qui.
-                                Quia et suscipit non sequi. Maxime sed odit. Beatae nesciunt nesciunt accusamus quia aut
-                                ratione aspernatur dolor. Sint harum eveniet dicta exercitationem minima. Exercitationem
-                                omnis asperiores natus aperiam dolor consequatur id ex sed. Quibusdam rerum dolores sint
-                                consequatur quidem ea.
-                                Beatae minima sunt libero soluta sapiente in rem assumenda. Et qui odit voluptatem. Cum
-                                quibusdam voluptatem voluptatem accusamus mollitia aut atque aut.
-                            </p>
-                            <img src="assets/img/blog/blog-inside-post.jpg" class="img-fluid" alt="">
-
-                            <h3>Ut repellat blanditiis est dolore sunt dolorum quae.</h3>
-                            <p>
-                                Rerum ea est assumenda pariatur quasi et quam. Facilis nam porro amet nostrum. In
-                                assumenda quia quae a id praesentium. Quos deleniti libero sed occaecati aut porro
-                                autem. Consectetur sed excepturi sint non placeat quia repellat incidunt labore. Autem
-                                facilis hic dolorum dolores vel.
-                                Consectetur quasi id et optio praesentium aut asperiores eaque aut. Explicabo omnis
-                                quibusdam esse. Ex libero illum iusto totam et ut aut blanditiis. Veritatis numquam ut
-                                illum ut a quam vitae.
-                            </p>
-                            <p>
-                                Alias quia non aliquid. Eos et ea velit. Voluptatem maxime enim omnis ipsa voluptas
-                                incidunt. Nulla sit eaque mollitia nisi asperiores est veniam.
-                            </p>
-
-                        </div>
-
-                        <div class="entry-footer">
-                            <i class="bi bi-folder"></i>
-                            <ul class="cats">
-                                <li><a href="#">Business</a></li>
-                            </ul>
-
-                            <i class="bi bi-tags"></i>
-                            <ul class="tags">
-                                <li><a href="#">Creative</a></li>
-                                <li><a href="#">Tips</a></li>
-                                <li><a href="#">Marketing</a></li>
-                            </ul>
-                        </div>
+                            </div>
+                        </section><!-- End Features Section -->
                     </article><!-- End blog entry -->
                 </div>
         </section><!-- End Blog Single Section -->
