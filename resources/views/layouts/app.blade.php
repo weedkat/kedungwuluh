@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
     <!-- Favicons -->
-    <link href="{{ url('/moderna/assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ url('/moderna/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <link href="{{ url('moderna/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ url('moderna/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -24,16 +24,16 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{ url('/moderna/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ url('/moderna/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{ url('/moderna/assets/css/style.css') }}" rel="stylesheet">
+    <link href="{{ url('moderna/assets/css/style.css') }}" rel="stylesheet">
 </head>
 
 <body>
@@ -144,17 +144,17 @@
     @yield('content')
 
     <!-- Vendor JS Files -->
-    <script src="{{ url('/moderna/assets/vendor/purecounter/purecounter.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
-    <script src="{{ url('/moderna/assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/purecounter/purecounter.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
+    <script src="{{ url('moderna/assets/vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{ url('/moderna/assets/js/main.js') }}"></script>
+    <script src="{{ url('moderna/assets/js/main.js') }}"></script>
 </body>
 
 </html>
