@@ -50,7 +50,7 @@
                                         <img src="https://images.bisnis-cdn.com/thumb/posts/2021/06/02/1400341/anak-depresi.jpg?w=744&h=465"
                                             class="img-fluid " alt="">
                                     </div>
-                                    <div class="col-md-7 pt-4">
+                                    <div class="col-md-7 pt-2">
                                         <h3>Tanda Gejala Depresi pada Anak</h3>
                                         <p>
                                             Biasanya gejala depresi tidak disadari karena dianggap sebagai perubahan
@@ -81,7 +81,7 @@
                                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDvmcr7QiHrLhxPCBlgt9R-G2aH5MBOsuHg&usqp=CAU"
                                             class="img-fluid" alt="" width="700">
                                     </div>
-                                    <div class="col-md-7 order-2 order-md-1">
+                                    <div class="col-md-7 pt-2 order-2 order-md-1">
                                         <h3>Penyebab Depresi Anak</h3>
                                         <p>
                                             Faktor depresi anak bermacam-macam, sehingga setiap anak memiliki penyebab
@@ -106,7 +106,7 @@
                                         <img src="https://asset.kompas.com/crops/1U3LriuqIUVUeCfrQNunD79v4Dw=/64x0:649x390/750x500/data/photo/2015/05/07/1414575shutterstock-190160534780x390.jpg"
                                             class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-md-7">
+                                    <div class="col-md-7 pt-2">
                                         <h3>Depresi Dapat Memicu Penggunaan Narkoba</h3>
                                         <p>Tak sedikit orang yang melepaskan stres mereka dengan
                                             merokok, minum alkohol,
@@ -129,7 +129,7 @@
                                         <img src="https://image-cdn.medkomtek.com/RHPhv7e81LpjbcfLXSRjl8oSQNI=/673x379/smart/klikdokter-media-buckets/medias/1837019/original/064316100_1516285407-Orang-Tua-Bisa-Menjadi-Penyebab-Depresi-pada-Anak-By-Gladskikh-Tatiana-shutterstock.jpg"
                                             class="img-fluid" alt="">
                                     </div>
-                                    <div class="col-md-7 pt-5 order-2 order-md-1">
+                                    <div class="col-md-7 pt-2 order-2 order-md-1">
                                         <h3>Cara Mencegah dan Mengatasi Depresi Anak</h3>
                                         <p>
                                             Pertolongan pertama adalah berbicara dengan anak secara terbuka dan
