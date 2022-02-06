@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
 @section('content')
+<style>
+    p{
+        text-align: justify;
+    }
+</style>
     <main id="main">
 
         <!-- ======= Blog Section ======= -->
@@ -29,24 +34,22 @@
                         <!-- ======= Features Section ======= -->
                         <section class="features">
                             <div class="container">
-
+                                <div style=""></div>
                                 <div class="section-title">
                                     <h2>Kenali Depresi Pada Anak Anda Agar Terhindar Dari Narkoba</h2>
                                     <p>Depresi pada anak sering kali tidak disadari orang tua. Kenali gejala depresi pada
                                         anak serta pencegahan dan pengobatan yang diperlukan pada ulasan berikut! Umumnya
                                         depresi terjadi pada orang dewasa, namun anak-anak dan remaja juga bisa terkena
-                                        depresi.
-                                        Jika seorang anak
-                                        tampak sedih dan kesedihan itu terus berlanjut sehingga mengganggu aktivitas sosial,
-                                        tugas sekolah, dan kehidupan keluarga, itu menunjukkan bahwa anak tersebut menderita
-                                        depresi.
+                                        depresi. Jika seorang anak tampak sedih dan kesedihan itu terus berlanjut sehingga
+                                        mengganggu aktivitas sosial, tugas sekolah, dan kehidupan keluarga, itu menunjukkan
+                                        bahwa anak tersebut menderita depresi.
                                     </p>
                                 </div>
 
                                 <div class="row d-flex flex-wrap align-items-center" data-aos="fade-up">
                                     <div class="col-md-5">
-                                        <img src="https://images.bisnis-cdn.com/thumb/posts/2021/06/02/1400341/anak-depresi.jpg?w=744&h=465" class="img-fluid "
-                                            alt="">
+                                        <img src="https://images.bisnis-cdn.com/thumb/posts/2021/06/02/1400341/anak-depresi.jpg?w=744&h=465"
+                                            class="img-fluid " alt="">
                                     </div>
                                     <div class="col-md-7 pt-4">
                                         <h3>Tanda Gejala Depresi pada Anak</h3>
@@ -76,8 +79,8 @@
 
                                 <div class="row d-flex flex-wrap align-items-center" data-aos="fade-up">
                                     <div class="col-md-5 order-1 order-md-2">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDvmcr7QiHrLhxPCBlgt9R-G2aH5MBOsuHg&usqp=CAU" class="img-fluid"
-                                            alt="" width="700">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWDvmcr7QiHrLhxPCBlgt9R-G2aH5MBOsuHg&usqp=CAU"
+                                            class="img-fluid" alt="" width="700">
                                     </div>
                                     <div class="col-md-7 order-2 order-md-1">
                                         <h3>Penyebab Depresi Anak</h3>
@@ -101,12 +104,13 @@
 
                                 <div class="row d-flex flex-wrap align-items-center" data-aos="fade-up">
                                     <div class="col-md-5">
-                                        <img src="https://asset.kompas.com/crops/1U3LriuqIUVUeCfrQNunD79v4Dw=/64x0:649x390/750x500/data/photo/2015/05/07/1414575shutterstock-190160534780x390.jpg" class="img-fluid"
-                                            alt="">
+                                        <img src="https://asset.kompas.com/crops/1U3LriuqIUVUeCfrQNunD79v4Dw=/64x0:649x390/750x500/data/photo/2015/05/07/1414575shutterstock-190160534780x390.jpg"
+                                            class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-7">
                                         <h3>Depresi Dapat Memicu Penggunaan Narkoba</h3>
-                                        <p>Tak sedikit orang yang melepaskan stres mereka dengan merokok, minum alkohol,
+                                        <p>Tak sedikit orang yang melepaskan stres mereka dengan
+                                            merokok, minum alkohol,
                                             atau makan berlebihan, biasanya tergantung dari
                                             peristiwa atau keadaan yang sedang dihadapi. Depresi menyebabkan orang ingin
                                             lari dari kehidupan nyata, sehingga
@@ -123,8 +127,8 @@
 
                                 <div class="row d-flex flex-wrap align-items-center" data-aos="fade-up">
                                     <div class="col-md-5 order-1 order-md-2">
-                                        <img src="https://image-cdn.medkomtek.com/RHPhv7e81LpjbcfLXSRjl8oSQNI=/673x379/smart/klikdokter-media-buckets/medias/1837019/original/064316100_1516285407-Orang-Tua-Bisa-Menjadi-Penyebab-Depresi-pada-Anak-By-Gladskikh-Tatiana-shutterstock.jpg" class="img-fluid"
-                                            alt="">
+                                        <img src="https://image-cdn.medkomtek.com/RHPhv7e81LpjbcfLXSRjl8oSQNI=/673x379/smart/klikdokter-media-buckets/medias/1837019/original/064316100_1516285407-Orang-Tua-Bisa-Menjadi-Penyebab-Depresi-pada-Anak-By-Gladskikh-Tatiana-shutterstock.jpg"
+                                            class="img-fluid" alt="">
                                     </div>
                                     <div class="col-md-7 pt-5 order-2 order-md-1">
                                         <h3>Cara Mencegah dan Mengatasi Depresi Anak</h3>
