@@ -29,7 +29,6 @@
         <section id="blog" class="blog">
             <div class="container" data-aos="fade-up">
                 <div class="entries">
-                    <article class="entry entry-single">
 
                         <!-- ======= Features Section ======= -->
                         <section class="features">
@@ -148,7 +147,6 @@
 
                             </div>
                         </section><!-- End Features Section -->
-                    </article><!-- End blog entry -->
                 </div>
         </section><!-- End Blog Single Section -->
     </main><!-- End #main -->
