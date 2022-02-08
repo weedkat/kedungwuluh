@@ -102,7 +102,8 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <div class="logo">
-                <h1 class="text-light"><img src="{{url('images/logo_banyumas.png')}}" alt=""><a href="index.html"><span> Kedungwuluh</span></a></h1>
+                <h1 class="text-light"><img src="{{ url('images/logo_banyumas.png') }}" alt=""><a
+                        href="index.html"><span> Kedungwuluh</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -131,11 +132,8 @@
                         </ul>
                     </li> --}}
                     <li><a href="contact.html">Kontak</a></li>
-                    <li  class="dropdown"><a href=""><i class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li class="dropdown"><a href="#">Login</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="{{ route('login') }}">Login</a></li>
+
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->

@@ -26,7 +26,8 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-5" href="{{ route('admin') }}">VaccineApp</a>
+        <a class="navbar-brand ps-3" href="{{ route('admin') }}"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
+            style="max-height: 35px"> Kedungwuluh</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-0 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -64,23 +65,27 @@
                         <div class="sb-sidenav-menu-heading">Data</div>
                         <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Vaksin
+                            Surat Keterangan Umum
                         </a>
                         <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Keluarga
+                            Surat Keterangan Tidak Mampu
                         </a>
                         <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Pasien
+                            Surat Keterangan Usaha
                         </a>
                         <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Jadwal
+                            Surat Pengantar Umum
                         </a>
                         <a class="nav-link" href="">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                            Riwayat
+                            Surat Pengantar Catatan Kepolisian
+                        </a>
+                        <a class="nav-link" href="">
+                            <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
+                            Laporan Keluhan
                         </a>
                     </div>
                 </div>
