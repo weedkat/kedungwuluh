@@ -8,6 +8,7 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #444;
@@ -101,7 +102,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -190,7 +191,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -295,6 +296,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   z-index: 0;
   border-radius: 0 0 50% 50%;
   transform: translateX(-50%) rotate(0deg);
+  background-size: cover;
 }
 #hero::before {
   content: "";
@@ -427,6 +429,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   right: 0;
   bottom: 0;
   background: linear-gradient(to right, rgba(30, 67, 86, 0.8), rgba(30, 67, 86, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
+  background-size: cover;
 }
 #hero-no-slider h2 {
   color: #fff;

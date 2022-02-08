@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
     <!-- CSRF Token -->
@@ -102,20 +102,17 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <div class="logo">
-                <h1 class="text-light"><a href="index.html"><span>Kedungwuluh</span></a></h1>
+                <h1 class="text-light"><img src="{{url('images/logo_banyumas.png')}}" alt=""><a href="index.html"><span> Kedungwuluh</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="active " href="index.html">Home</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="team.html">Team</a></li>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#pelayanan">Pelayanan</a></li>
+                    <li><a href="#map">Map</a></li>
+                    {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
                             <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i
@@ -132,8 +129,13 @@
                             <li><a href="#">Drop Down 3</a></li>
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
+                    </li> --}}
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li  class="dropdown"><a href=""><i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="dropdown"><a href="#">Login</a></li>
+                        </ul>
                     </li>
-                    <li><a href="contact.html">Contact Us</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -143,6 +145,9 @@
 
     <!-- main content -->
     @yield('content')
+
+    <!--footer-->
+    @include('layouts.footer')
 
     <!-- Vendor JS Files -->
     <script src="{{ url('moderna/assets/vendor/purecounter/purecounter.js') }}"></script>
