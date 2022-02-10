@@ -33,6 +33,11 @@
     <link href="{{ url('moderna/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
     <link href="{{ url('moderna/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <!-- Template Main CSS File -->
     <link href="{{ url('moderna/assets/css/style.css') }}" rel="stylesheet">
 </head>
@@ -102,8 +107,8 @@
         <div class="container d-flex justify-content-between align-items-center">
 
             <div class="logo">
-                <h1 class="text-light"><img src="{{ url('images/logo_banyumas.png') }}" alt=""><a
-                        href="index.html"><span> Kedungwuluh</span></a></h1>
+                <h1 class="text-light"><img src="{{ url('images/logo_banyumas.png') }}" alt=""><a href=""><span>
+                            Kedungwuluh</span></a></h1>
                 <!-- Uncomment below if you prefer to use an image logo -->
                 <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
             </div>
@@ -132,7 +137,21 @@
                         </ul>
                     </li> --}}
                     <li><a href="contact.html">Kontak</a></li>
-                    <li><a href="{{ route('login') }}">Login</a></li>
+                    @if (Auth::check())
+                        <li><a href="{{ route('login') }}">Dashboard</a></li>
+                        <li><a href="{{ route('logout') }}" onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();">
+                                Logout
+                            </a>
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST"
+                                class="d-none">
+                                @csrf
+                            </form>
+                        </li>
+                    @else
+                        <li><a href="{{ route('login') }}">Login</a></li>
+                    @endif
+
 
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
@@ -140,6 +159,7 @@
 
         </div>
     </header><!-- End Header -->
+    @include('sweetalert::alert')
 
     <!-- main content -->
     @yield('content')
@@ -156,9 +176,34 @@
     <script src="{{ url('moderna/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/waypoints/noframework.waypoints.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/php-email-form/validate.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="{{ url('moderna/assets/js/main.js') }}"></script>
+    <script type="text/javascript">
+        //confirmation
+        function validation(event) {
+            console.log('hello');
+            event.preventDefault();
+            var form = event.target;
+            Swal.fire({
+                title: 'Warning',
+                text: "Apakah anda yakin menghapus data ini?",
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Ya',
+                cancelButtonText: 'Tidak',
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    console.log('bruh');
+                    form.submit();
+                }
+            });
+        }
+    </script>
 </body>
 
 </html>
