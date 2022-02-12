@@ -15,7 +15,7 @@ class LaporanKeluhanController extends Controller
      */
     public function index()
     {
-        //
+        return view('form.lapor');
     }
 
     /**

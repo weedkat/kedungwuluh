@@ -6,6 +6,7 @@ use App\Models\SuratKeteranganUmum;
 use App\Http\Requests\StoreSuratKeteranganUmumRequest;
 use App\Http\Requests\UpdateSuratKeteranganUmumRequest;
 use RealRashid\SweetAlert\Facades\Alert;
+use SebastianBergmann\Environment\Console;
 
 class SuratKeteranganUmumController extends Controller
 {
@@ -16,7 +17,7 @@ class SuratKeteranganUmumController extends Controller
      */
     public function index()
     {
-        //
+        return view('form.sku');
     }
 
     /**
@@ -37,18 +38,13 @@ class SuratKeteranganUmumController extends Controller
      */
     public function store(StoreSuratKeteranganUmumRequest $request)
     {
-        $request->validate([
-            'nama_lengkap' => 'required',
-            'no_hp' => 'required',
-            'tanggal_lahir' => 'required',
-            'warga_negara' => 'required',
-            'agama' => 'required',
-            'pekerjaan' => 'required',
-            'tempat_tinggal' => 'required',
-            'nik' => 'required',
-            'status_kawin' => 'required',
-            'keperluan' => 'required',
-        ]);
+        $image1 = $request->file('ktp');
+        $imagename1 = $image1->getClientOriginalName();
+        $image1->move(public_path().'/file',$imagename1);
+        $image2 = $request->file('surat_kk');
+        $imagename2 = $image2->getClientOriginalName();
+        $image2->move(public_path().'/file',$imagename2);
+        SuratKeteranganUmum::insert($request->except(['_token']));
         return back();
     }
 

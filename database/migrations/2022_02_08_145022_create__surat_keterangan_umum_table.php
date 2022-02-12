@@ -29,9 +29,9 @@ class CreateSuratKeteranganUmumTable extends Migration
             $table->enum('status_kawin', ['Belum Kawin', 'Kawin', 'Cerai Hidup', 'Cerai Mati']);
             $table->string('keperluan');
             $table->enum('status', ['proses', 'selesai', 'perbaiki']);
-            $table->string('keterangan_lain');
-            $table->string('catatan');
-            $table->string('kode_tiket');
+            $table->string('keterangan_lain')->nullable();
+            $table->string('catatan')->nullable();
+            $table->string('kode_tiket')->nullable();
             $table->timestamps();
         });
     }

@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<script>
-    document.getElementById("header").classList.add('header-transparent');
-</script>
+    <script>
+        document.getElementById("header").classList.add('header-transparent');
+    </script>
     {{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -24,6 +24,7 @@
     </div>
 </div> --}}
     <!-- ======= Hero Section ======= -->
+
 
     <section id="hero" class="d-flex justify-cntent-center align-items-center">
         <div id="heroCarousel" class="container carousel carousel-fade" data-bs-ride="carousel" data-bs-interval="10000">
@@ -85,97 +86,66 @@
                         sit in iste officiis commodi quidem hic quas.</p>
                 </div>
 
-                <div class="row justify-content-center">
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='#';" style="cursor: pointer;">
-                            <div class="icon"><i class="bx bxl-dribbble"></i></div>
+                <div class="row equal-cols justify-content-center">
+
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/sku';" style="cursor: pointer;">
+                            <div class="icon"><i class="bx bx-file"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Umum</a></h4>
                             <p class="description">Surat Keterangan Umum</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/sktm';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Tidak Mampu</a></h4>
                             <p class="description">Surat Keterangan Tidak Mampu</p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/skus';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Usaha</a></h4>
-                            <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                                officia
-                                deserunt mollit anim id est laborum</p>
+                            <p class="description"></p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/spu';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Surat Pengantar Umum</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis
-                                praesentium voluptatum deleniti atque</p>
+                            <p class="description"></p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/spck';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Surat Pengantar Catatan Kepolisian</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis
-                                praesentium voluptatum deleniti atque</p>
+                            <p class="description"></p>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-pink" onclick="location.href='#';" style="cursor: pointer;">
+                    <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+                        <div class="icon-box icon-box-pink" onclick="location.href='/lapor';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Lapor Keluhan</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis
-                                praesentium voluptatum deleniti atque</p>
+                            <p class="description"></p>
                         </div>
                     </div>
                 </div>
-            </div>
         </section><!-- End Services Section -->
 
         <!-- ======= Why Us Section ======= -->
         <section id="map" class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-            <div class="container">
-
-                <div class="row">
-                    <div class="col-lg-6 video-box">
-                        <img src="{{ url('/moderna/assets/img/why-us.jpg') }}" class="img-fluid" alt="">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4"
-                            data-vbtype="video" data-autoplay="true"></a>
-                    </div>
-
-                    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias
-                                excepturi sint occaecati cupiditate non provident</p>
-                        </div>
-
-                        <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                                blanditiis
-                                praesentium voluptatum deleniti atque</p>
-                        </div>
-
-                    </div>
-                </div>
-
+            <div class="section-title mt-4 mb-0">
+                <h2>Peta Kedungwuluh</h2>
+            </div>
+            <div class="text-center">
+                <iframe width="900" height="600" frameborder="0" scrolling="no" allowfullscreen
+                    src="https://arcg.is/1WW1un0"></iframe>
             </div>
         </section><!-- End Why Us Section -->
 
@@ -284,5 +254,3 @@
     </main>
 
 @endsection
-
-

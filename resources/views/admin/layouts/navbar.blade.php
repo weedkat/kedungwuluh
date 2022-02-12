@@ -26,7 +26,7 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{{ route('admin') }}"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
+        <a class="navbar-brand ps-3" href="{{ route('admin.index') }}"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
             style="max-height: 35px"> Kedungwuluh</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-0 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
@@ -39,7 +39,7 @@
                     aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="/change">Setelan Akun</a></li>
-                    <li><a class="dropdown-item" href="{{route('admin.create')}}">Tambah Akun</a></li>
+                    <li><a class="dropdown-item" href="">Tambah Akun</a></li>
                     <li>
                         <hr class="dropdown-divider" />
                     </li>

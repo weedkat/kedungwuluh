@@ -15,7 +15,7 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function index()
     {
-        //
+        return view('form.sktm');
     }
 
     /**
@@ -36,7 +36,7 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function store(StoreSuratKeteranganTidakMampuRequest $request)
     {
-        //
+        dd($request);
     }
 
     /**
@@ -47,7 +47,7 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function show(SuratKeteranganTidakMampu $suratKeteranganTidakMampu)
     {
-        //
+
     }
 
     /**
