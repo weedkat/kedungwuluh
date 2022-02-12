@@ -13,7 +13,7 @@ class StoreSuratKeteranganUmumRequest extends FormRequest
      */
     public function authorize()
     {
-        return true;
+        return false;
     }
 
     /**

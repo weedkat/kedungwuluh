@@ -3,6 +3,7 @@
 namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Support\Facades\Auth;
 
 class UpdateSuratPengantarCatatanKepolisianRequest extends FormRequest
 {
@@ -13,7 +14,7 @@ class UpdateSuratPengantarCatatanKepolisianRequest extends FormRequest
      */
     public function authorize()
     {
-        return false;
+        return Auth::check();
     }
 
     /**

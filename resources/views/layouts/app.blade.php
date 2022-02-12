@@ -122,7 +122,7 @@
                 <ul>
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#pelayanan">Pelayanan</a></li>
-                    <li><a href="#map">Map</a></li>
+                    <li><a href="/peta">Map</a></li>
                     {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -141,7 +141,7 @@
                             <li><a href="#">Drop Down 4</a></li>
                         </ul>
                     </li> --}}
-                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
                     @if (Auth::check())
                         <li><a href="{{ route('login') }}">Dashboard</a></li>
                         <li><a href="{{ route('logout') }}" onclick="event.preventDefault();

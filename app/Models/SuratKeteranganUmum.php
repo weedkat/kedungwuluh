@@ -8,7 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class SuratKeteranganUmum extends Model
 {
     use HasFactory;
-
     //table name
     protected $table = 'tb_surat_keterangan_umum';
 
@@ -41,6 +40,4 @@ class SuratKeteranganUmum extends Model
 
     //fillable
     public $timestamps = true;
-
-
 }

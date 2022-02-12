@@ -31,23 +31,22 @@
             <!-- Slide 1 -->
             <div class="carousel-item active">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Kedungwuluh</span></h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                        Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore
-                        modi architecto.</p>
-                    <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
+                    <h2 class="animate__animated animate__fadeInDown">Selamat Datang di <span>Kedungwuluh</span></h2>
+                    <p class="animate__animated animate__fadeInUp">Kelurahan Kedungwuluh merupakan salah satu kelurahan dari
+                        7 kelurahan yang ada di Kecamatan Purwokerto Barat, Kabupaten Banyumas.
+                        Kelurahan Kedungwuluh memiliki luas wilayah ± 84.00 Ha dengan jumlah RT sebanyak 51 RT dan jumlah
+                        RW sebanyak 8 RW. Letak kondisi geografis Kelurahan Kedungwuluh berada 75 m di atas permukaan laut.
+                    </p>
+                    <a href="http://kedungwuluhkel.blogspot.com/2018/01/profil.html" target="_blank" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
 
             <!-- Slide 2 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Waspada Narkoba</h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                        Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore
-                        modi architecto.</p>
+                    <h2 class="animate__animated animate__fadeInDown">Visi</h2>
+                    <p class="animate__animated animate__fadeInUp">Terwujudnya Abdi Negara, Abdi Masyarakat Untuk
+                        Terciptanya Masyarakat yang Sejahtera .</p>
                     <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
@@ -55,11 +54,8 @@
             <!-- Slide 3 -->
             <div class="carousel-item">
                 <div class="carousel-container">
-                    <h2 class="animate__animated animate__fadeInDown">Cara Kerja Vaksin</h2>
-                    <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid.
-                        Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut.
-                        Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore
-                        modi architecto.</p>
+                    <h2 class="animate__animated animate__fadeInDown">Misi</h2>
+                    <p class="animate__animated animate__fadeInUp">Terwujudnya Kualitas Pelayanan Publik ,Cepat,tepat dan Ramah/Pelayanan Prima bagi Masyarakat.</p>
                     <a href="" class="btn-get-started animate__animated animate__fadeInUp">Read More</a>
                 </div>
             </div>
@@ -89,7 +85,7 @@
                 <div class="row equal-cols justify-content-center">
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='/sku';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-cyan" onclick="window.location='{{ route('sku.create')}}'" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Umum</a></h4>
                             <p class="description">Surat Keterangan Umum</p>
@@ -139,15 +135,7 @@
         </section><!-- End Services Section -->
 
         <!-- ======= Why Us Section ======= -->
-        <section id="map" class="why-us section-bg" data-aos="fade-up" date-aos-delay="200">
-            <div class="section-title mt-4 mb-0">
-                <h2>Peta Kedungwuluh</h2>
-            </div>
-            <div class="text-center">
-                <iframe width="900" height="600" frameborder="0" scrolling="no" allowfullscreen
-                    src="https://arcg.is/1WW1un0"></iframe>
-            </div>
-        </section><!-- End Why Us Section -->
+       <!-- End Why Us Section -->
 
         {{-- <!-- ======= Features Section ======= -->
         <section class="features">

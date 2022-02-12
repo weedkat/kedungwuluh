@@ -19,7 +19,16 @@
 
     <div class="footer-top">
         <div class="container">
-            <div class="row">
+            <div class="text-center">
+                <h4 id="kontak">Kontak</h4>
+                <p>
+                    Jalan Tentara Pelajar No. 33 Purwokerto kode pos 53131 <br>
+                    <strong>Telpon :</strong> (0281) 622849<br>
+                    <strong>Fax :</strong> (0281) 622849<br>
+                    <strong>Email :</strong> kedungwuluhpwtbarat@gmail.com<br>
+                </p>
+            </div>
+            {{-- <div class="row">
 
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
@@ -44,7 +53,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-contact">
-                    <h4>Contact Us</h4>
+                    <h4>Kontak</h4>
                     <p>
                         A108 Adam Street <br>
                         New York, NY 535022<br>
@@ -52,7 +61,6 @@
                         <strong>Phone:</strong> +1 5589 55488 55<br>
                         <strong>Email:</strong> info@example.com<br>
                     </p>
-
                 </div>
 
                 <div class="col-lg-3 col-md-6 footer-info">
@@ -67,23 +75,22 @@
                     </div>
                 </div>
 
-            </div>
+            </div> --}}
         </div>
     </div>
 
     <div class="container">
         <div class="copyright">
-            &copy; Copyright <strong><span>Moderna</span></strong>. All Rights Reserved
+            &copy; Copyright <strong><span>Kelurahan Kedungwuluh</span></strong>. All Rights Reserved
         </div>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
             <!-- You can delete the links only if you purchased the pro version. -->
             <!-- Licensing information: https://bootstrapmade.com/license/ -->
             <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by Fatah Muria
         </div>
     </div>
 </footer><!-- End Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

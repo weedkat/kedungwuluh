@@ -6,7 +6,6 @@ use App\Models\SuratKeteranganUmum;
 use App\Http\Requests\StoreSuratKeteranganUmumRequest;
 use App\Http\Requests\UpdateSuratKeteranganUmumRequest;
 use RealRashid\SweetAlert\Facades\Alert;
-use SebastianBergmann\Environment\Console;
 
 class SuratKeteranganUmumController extends Controller
 {
@@ -17,7 +16,11 @@ class SuratKeteranganUmumController extends Controller
      */
     public function index()
     {
-        return view('form.sku');
+        $title = 'Daftar Permintaan Surat Keterangan Umum';
+
+        $sku = SuratKeteranganUmum::all();
+
+        return view('admin.sku', compact('title', 'sku'));
     }
 
     /**
@@ -40,10 +43,10 @@ class SuratKeteranganUmumController extends Controller
     {
         $image1 = $request->file('ktp');
         $imagename1 = $image1->getClientOriginalName();
-        $image1->move(public_path().'/file',$imagename1);
+        $image1->move(public_path() . '/file', $imagename1);
         $image2 = $request->file('surat_kk');
         $imagename2 = $image2->getClientOriginalName();
-        $image2->move(public_path().'/file',$imagename2);
+        $image2->move(public_path() . '/file', $imagename2);
         SuratKeteranganUmum::insert($request->except(['_token']));
         return back();
     }
@@ -88,8 +91,10 @@ class SuratKeteranganUmumController extends Controller
      * @param  \App\Models\SuratKeteranganUmum  $suratKeteranganUmum
      * @return \Illuminate\Http\Response
      */
-    public function destroy(SuratKeteranganUmum $suratKeteranganUmum)
+    public function destroy($id)
     {
-        //
+        SuratKeteranganUmum::destroy($id);
+        Alert::toast('Request Berhasil Dihapus', 'success');
+        return back();
     }
 }

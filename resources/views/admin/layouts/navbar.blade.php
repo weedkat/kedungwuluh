@@ -26,8 +26,8 @@
 
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="{{ route('admin.index') }}"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
-            style="max-height: 35px"> Kedungwuluh</a>
+        <a class="navbar-brand ps-3" href="{{ route('admin.index') }}"><img
+                src="{{ url('images/logo_banyumas.png') }}" alt="" style="max-height: 35px"> Kedungwuluh</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-0 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
@@ -64,7 +64,7 @@
                             Dashboard
                         </a>
                         <div class="sb-sidenav-menu-heading">Data</div>
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('sku.index') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Surat Keterangan Umum
                         </a>
@@ -126,7 +126,8 @@
     <script src="{{ url('/sb-admin/assets/demo/chart-bar-demo.js') }}"></script>
     <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
     <script src="{{ url('/sb-admin/js/datatables-simple-demo.js') }}"></script>
-    <script type="text/javascript"> //confirmation
+    <script type="text/javascript">
+        //confirmation
         function validation(event) {
             event.preventDefault();
             var form = event.target;
@@ -139,7 +140,7 @@
                 confirmButtonText: 'Ya',
                 cancelButtonText: 'Tidak',
             }).then((result) => {
-                if(result.isConfirmed){
+                if (result.isConfirmed) {
                     console.log('bruh');
                     form.submit();
                 }

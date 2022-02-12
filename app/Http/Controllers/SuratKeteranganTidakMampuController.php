@@ -15,7 +15,11 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function index()
     {
-        return view('form.sktm');
+        $sktm = SuratKeteranganTidakMampu::all();
+
+        $title = 'Surat Keterangan Umum';
+
+        return view('admin.sktm', compact('title', 'sktm'));
     }
 
     /**
@@ -36,7 +40,7 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function store(StoreSuratKeteranganTidakMampuRequest $request)
     {
-        dd($request);
+
     }
 
     /**
@@ -81,6 +85,7 @@ class SuratKeteranganTidakMampuController extends Controller
      */
     public function destroy(SuratKeteranganTidakMampu $suratKeteranganTidakMampu)
     {
-        //
+        $suratKeteranganTidakMampu->delete();
+        return back();
     }
 }

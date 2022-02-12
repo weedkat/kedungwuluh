@@ -23,6 +23,9 @@ use App\Http\Controllers\SuratPengantarUmumController;
 Route::get('/', function () {
     return view('home');
 });
+Route::get('/peta', function () {
+    return view('blog.peta');
+});
 
 Auth::routes();
 Route::resources([
