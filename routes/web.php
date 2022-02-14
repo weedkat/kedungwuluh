@@ -9,6 +9,8 @@ use App\Http\Controllers\LaporanKeluhanController;
 use App\Http\Controllers\SuratKeteranganUsahaController;
 use App\Http\Controllers\SuratPengantarCatatanKepolisianController;
 use App\Http\Controllers\SuratPengantarUmumController;
+use App\Models\LaporanKeluhan;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,5 +39,7 @@ Route::resources([
     'spu' => SuratPengantarUmumController::class,
     'admin' => AdminController::class,
 ]);
-
-
+Route::get('/status/sku', [SuratKeteranganUmumController::class, 'search'])->name('sku.search');
+Route::get('/status/lapor', [LaporanKeluhanController::class, 'search'])->name('lapor.search');
+Route::put('sku/edit/{id}', [SuratKeteranganUmumController::class, 'edit'])->name('sku.edit');
+Route::put('lapor/edit/{id}', [LaporanKeluhanController::class, 'edit'])->name('lapor.edit');

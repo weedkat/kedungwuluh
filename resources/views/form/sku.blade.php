@@ -34,11 +34,17 @@
                                     <label class="fieldlabels">Nama Lengkap: * </label>
                                     <input type="text" id="nama_lengkap" name="nama_lengkap" placeholder="Nama anda"
                                         value="" onkeyup='saveValue(this);' />
+                                    <label class="fieldlabels">Gender: *</label>
+                                    <select name="gender" id="gender" onchange='saveValue(this);'>
+                                        <option value="laki-laki">Laki-laki</option>
+                                        <option value="perempuan">Perempuan</option>
+                                    </select>
                                     <label class="fieldlabels">Nomor HP: *</label>
                                     <input type="text" id="no_hp" name="no_hp" placeholder="Nomor HP"
                                         onkeyup='saveValue(this);' />
                                     <label class="fieldlabels">Tempat Lahir: *</label>
-                                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir" onkeyup='saveValue(this);'>
+                                    <input type="text" id="tempat_lahir" name="tempat_lahir" placeholder="Tempat Lahir"
+                                        onkeyup='saveValue(this);'>
                                     <label class="fieldlabels">Tanggal Lahir: *</label>
                                     <input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="tanggal_lahir"
                                         onchange='saveValue(this);' />
@@ -105,18 +111,32 @@
                                             <h2 class="steps">Langkah 3 - 3</h2>
                                         </div>
                                     </div> <br><br>
-                                    <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-3"> <img src="{{ url('images/success.png') }}"
-                                                class="fit-image"> </div>
-                                    </div> <br><br>
-                                    <div class="row justify-content-center">
-                                        <div class="col-7 text-center">
-                                            <h5 class="purple-text text-center">You Have Successfully Signed Up</h5>
+                                    @if (session()->has('kode'))
+                                        <h2 class="purple-text text-center"><strong>Berhasil !</strong></h2> <br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img src="{{ url('images/success.png') }}"
+                                                    class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5 class="purple-text text-center">Kode anda : {{ session('kode') }}</h5>
+                                                <h5 class="purple-text text-center">Berhasil</h5>
+                                            </div>
                                         </div>
-                                    </div>
+                                    @else
+                                    <h2 class="purple-text text-center"><strong>Gagal !</strong></h2> <br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-3"> <img src="{{ url('images/error.png') }}"
+                                                    class="fit-image"> </div>
+                                        </div> <br><br>
+                                        <div class="row justify-content-center">
+                                            <div class="col-7 text-center">
+                                                <h5 class="purple-text text-center">Ada kesalahan pada saat input data, silahkan dicoba kembali</h5>
+                                            </div>
+                                        </div>
+                                    @endif
                                 </div>
-                                <input type="button" name="next" class="ok action-button" value="Ajukan"
+                                <input type="button" name="next" class="ok action-button" value="Selesai"
                                     onclick="location.href='/';" />
                             </fieldset>
                         </form>

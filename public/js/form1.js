@@ -26,7 +26,7 @@ function validation(e) {
     e.preventDefault();
     Swal.fire({
         title: "Warning",
-        text: "Apakah anda yakin data sudah benar?",
+        text: "Apakah anda yakin mengupdate data ini?",
         showCancelButton: true,
         confirmButtonColor: "#3085d6",
         cancelButtonColor: "#d33",
@@ -80,6 +80,26 @@ inputAll.forEach((n) => {
 });
 
 $(document).ready(function () {
+    $(".collapse").on("shown.bs.collapse", function () {
+        localStorage.setItem("coll_" + this.id, true);
+		console.log('SHOW ' + this.id);
+    });
+
+    $(".collapse").on("hidden.bs.collapse", function () {
+        localStorage.removeItem("coll_" + this.id);
+		console.log('HIDE' + this.id);
+    });
+
+    $(".collapse").each(function () {
+		console.log('EACH ' + this.id);
+        if (localStorage.getItem("coll_" + this.id) === "true") {
+            $(this).collapse("show");
+        }
+        else {
+            $(this).collapse("hide");
+        }
+    });
+
     var current_fs, next_fs, previous_fs; //fieldsets
     var opacity;
     var current; //current progress bar value

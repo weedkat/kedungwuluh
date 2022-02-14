@@ -10,7 +10,7 @@ class LaporanKeluhan extends Model
     use HasFactory;
 
      //table name
-     protected $table = 'tb_SuratKeteranganUmum';
+     protected $table = 'tb_laporan_keluhan';
 
      //primary key
      protected $primaryKey = 'id';

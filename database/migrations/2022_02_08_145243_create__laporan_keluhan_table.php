@@ -20,8 +20,8 @@ class CreateLaporanKeluhanTable extends Migration
             $table->string('tempat_tinggal');
             $table->string('keluhan');
             $table->string('foto');
-            $table->enum('status', ['proses', 'selesai', 'dibaca', 'terjawab']);
-            $table->string('catatan');
+            $table->enum('status', ['proses', 'terjawab']);
+            $table->string('catatan')->nullable();
             $table->string('kode_tiket');
             $table->timestamps();
         });

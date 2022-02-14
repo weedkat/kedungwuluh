@@ -17,6 +17,7 @@ class SuratKeteranganUmum extends Model
     //fillable
     protected $fillable = [
         'nama_lengkap',
+        'gender',
         'no_hp',
         'tempat_lahir',
         'tanggal_lahir',

@@ -76,10 +76,7 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Pelayanan</h2>
-                    <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-                        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia
-                        fugiat
-                        sit in iste officiis commodi quidem hic quas.</p>
+                    <p>Website kelurahan Kedungwuluh menyediakan pelayan online berikut ini</p>
                 </div>
 
                 <div class="row equal-cols justify-content-center">
@@ -93,7 +90,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="100">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='/sktm';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-file"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Tidak Mampu</a></h4>
                             <p class="description">Surat Keterangan Tidak Mampu</p>
@@ -101,7 +98,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='/skus';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-tachometer"></i></div>
                             <h4 class="title"><a href="">Surat Keterangan Usaha</a></h4>
                             <p class="description"></p>
@@ -109,7 +106,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='/spu';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Surat Pengantar Umum</a></h4>
                             <p class="description"></p>
@@ -117,7 +114,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-cyan" onclick="location.href='/spck';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-cyan" onclick="location.href='/';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Surat Pengantar Catatan Kepolisian</a></h4>
                             <p class="description"></p>
@@ -125,7 +122,7 @@
                     </div>
 
                     <div class="col-md-6 col-lg-3 align-items-stretch" data-aos="fade-up" data-aos-delay="200">
-                        <div class="icon-box icon-box-pink" onclick="location.href='/lapor';" style="cursor: pointer;">
+                        <div class="icon-box icon-box-pink" onclick="location.href='{{route('lapor.create')}}';" style="cursor: pointer;">
                             <div class="icon"><i class="bx bx-world"></i></div>
                             <h4 class="title"><a href="">Lapor Keluhan</a></h4>
                             <p class="description"></p>

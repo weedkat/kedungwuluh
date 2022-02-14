@@ -19,7 +19,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.26.0/moment.min.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
 </head>
 
 <body class="sb-nav-fixed">
@@ -84,7 +84,7 @@
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Surat Pengantar Catatan Kepolisian
                         </a>
-                        <a class="nav-link" href="">
+                        <a class="nav-link" href="{{ route('lapor.index') }}">
                             <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                             Laporan Keluhan
                         </a>
@@ -128,12 +128,29 @@
     <script src="{{ url('/sb-admin/js/datatables-simple-demo.js') }}"></script>
     <script type="text/javascript">
         //confirmation
+        var msg;
+        $(document).on("click", "#selesai", function() {
+
+            $("input[name='action']").val('Selesai');
+            msg = 'Apakah anda yakin permintaan selesai diproses?';
+        });
+        $(document).on("click", "#perbaiki", function() {
+            $("input[name='action']").val('Perbaiki');
+            msg = 'Apakah anda yakin permintaan perlu diperbaiki?';
+        });
+        $(document).on("click", "#hapus", function() {
+            msg = 'Apakah anda yakin untuk menghapus permintaan ini?';
+        });
+        $(document).on("click", "#jawab", function() {
+            msg = 'Apakah anda yakin untuk menjawab laporan ini?';
+        });
+
         function validation(event) {
             event.preventDefault();
             var form = event.target;
             Swal.fire({
-                title: 'Warning',
-                text: "Apakah anda yakin menghapus data ini?",
+                title: 'Peringatan',
+                text: msg,
                 showCancelButton: true,
                 confirmButtonColor: '#3085d6',
                 cancelButtonColor: '#d33',
@@ -141,7 +158,6 @@
                 cancelButtonText: 'Tidak',
             }).then((result) => {
                 if (result.isConfirmed) {
-                    console.log('bruh');
                     form.submit();
                 }
             });

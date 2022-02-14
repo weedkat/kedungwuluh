@@ -21,8 +21,7 @@
                     <thead>
                         <tr>
                             <th>Nama Lengkap</th>
-                            <th>Nomor HP</th>
-                            <th>NIK</th>
+                            <th>keluhan</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
@@ -31,27 +30,22 @@
                         <tr>
                             <th>Nama Lengkap</th>
                             <th>Nomor HP</th>
-                            <th>NIK</th>
                             <th>Status</th>
                             <th>Action</th>
                         </tr>
                     </tfoot>
                     <tbody>
-                        @foreach ($sku as $s)
+                        @foreach ($lapor as $s)
                             <tr>
                                 <td>{{ $s->nama_lengkap }}</td>
-                                <td>{{ $s->no_hp }}</td>
-                                <td>{{ $s->nik }}</td>
+                                <td>{{ $s->keluhan }}</td>
                                 <td>
                                     @switch($s->status)
                                         @case('proses')
                                             <span class="btn btn-warning">Proses</span>
                                         @break
-                                        @case('selesai')
-                                            <span class="btn btn-success">Selesai</span>
-                                        @break
-                                        @case('perbaiki')
-                                            <span class="btn btn-danger">Perbaiki</span>
+                                        @case('terjawab')
+                                            <span class="btn btn-success">Terjawab</span>
                                         @break
                                         @default
 
@@ -67,7 +61,7 @@
                                         </div>
                                         <div class="btn-group me-2" role="group" aria-label="Second group">
                                             {{-- <form action="{{ url('/manager/delete_ruang/' . $room->id_ruang) }}" --}}
-                                            <form action="{{ route('sku.destroy', $s->id) }}" method="post"
+                                            <form action="{{ route('lapor.destroy', $s->id) }}" method="post"
                                                 onsubmit="validation(event)">
                                                 @method('delete')
                                                 @csrf
@@ -98,7 +92,7 @@
                                                         <div class="col-lg-12">
                                                             <div class="card shadow-lg border-0 rounded-lg mt-0">
                                                                 <form class="form"
-                                                                    action="{{ route('sku.update', $s->id) }}"
+                                                                    action="{{ route('lapor.update', $s->id) }}"
                                                                     method="post" autocomplete="off" onsubmit="validation(event)">
                                                                     @csrf
                                                                     @method('PUT')
@@ -109,18 +103,6 @@
                                                                                 placeholder="Nama Lengkap"
                                                                                 value="{{ $s->nama_lengkap }}" readonly>
                                                                             <label for="inputNama">Nama Lengkap</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="nik"
-                                                                                name="nik" placeholder="NIK"
-                                                                                value="{{ $s->nik }}" readonly>
-                                                                            <label for="inputNIK">NIK</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="gender"
-                                                                                name="gender" placeholder="Gender"
-                                                                                value="{{ $s->gender }}" readonly>
-                                                                            <label for="inputGender">Gender</label>
                                                                         </div>
 
                                                                         {{-- <div class="form-floating mb-3">
@@ -134,38 +116,8 @@
                                                                                 value="{{ $s->no_hp }}" readonly>
                                                                             <label for="">Nomor HP</label>
                                                                         </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="tempat_lahir"
-                                                                                name="tempat_lahir"
-                                                                                placeholder="tempat_lahir"
-                                                                                value="{{ $s->tempat_lahir }}" readonly>
-                                                                            <label for="">Tempat Lahir</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="tanggal_lahir"
-                                                                                name="tanggal_lahir" type="date"
-                                                                                value="{{ $s->tanggal_lahir }}" readonly>
-                                                                            <label for="">Tanggal Lahir</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="warga_negara"
-                                                                                name="warga_negara"
-                                                                                placeholder="warga_negara"
-                                                                                value="{{ $s->warga_negara }}" readonly>
-                                                                            <label for="">Warga Negara</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="agama"
-                                                                                name="agama" placeholder="agama"
-                                                                                value="{{ $s->agama }}" readonly>
-                                                                            <label for="">Agama</label>
-                                                                        </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="pekerjaan"
-                                                                                name="pekerjaan" placeholder="pekerjaan"
-                                                                                value="{{ $s->pekerjaan }}" readonly>
-                                                                            <label for="">Pekerjaan</label>
-                                                                        </div>
+
+
                                                                         <div class="form-floating mb-3">
                                                                             <input class="form-control"
                                                                                 id="tempat_tinggal" name="tempat_tinggal"
@@ -174,27 +126,14 @@
                                                                                 readonly>
                                                                             <label for="">Tempat Tinggal</label>
                                                                         </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control" id="status_kawin"
-                                                                                name="status_kawin"
-                                                                                placeholder="status_kawin"
-                                                                                value="{{ $s->status_kawin }}" readonly>
-                                                                            <label for="">Status Kawin</label>
-                                                                        </div>
+
                                                                         <div class="form-floating mb-3">
                                                                             <input class="form-control" id="keperluan"
-                                                                                name="keperluan" placeholder="keperluan"
-                                                                                value="{{ $s->keperluan }}" readonly>
-                                                                            <label for="">Keperluan</label>
+                                                                                name="keluhan" placeholder="keluhan"
+                                                                                value="{{ $s->keluhan }}" readonly>
+                                                                            <label for="">Laporan / Keluhan</label>
                                                                         </div>
-                                                                        <div class="form-floating mb-3">
-                                                                            <input class="form-control"
-                                                                                id="keterangan_lain" name="keterangan_lain"
-                                                                                placeholder="keterangan_lain"
-                                                                                value="{{ $s->keterangan_lain }}"
-                                                                                @if ($s->status !== 'proses') readonly @endif>
-                                                                            <label for="">Keterangan Lain</label>
-                                                                        </div>
+
                                                                         <div class="form-floating mb-3">
                                                                             <input class="form-control" id="catatan"
                                                                                 name="catatan"
@@ -215,10 +154,7 @@
                                                                     <div class="card-footer py-3">
                                                                         <div class="d-flex flex-row-reverse">
                                                                             <input type="submit" class="btn btn-primary"
-                                                                                value="Selesai" id="selesai">
-                                                                            <input type="submit"
-                                                                                class="btn btn-secondary me-2"
-                                                                                value="Perbaiki" id="perbaiki">
+                                                                                value="Jawab" id="jawab">
                                                                         </div>
                                                                     </div>
                                                                 </form>

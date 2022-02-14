@@ -1,21 +1,23 @@
 <!-- ======= Footer ======= -->
 <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
 
-    {{-- <div class="footer-newsletter">
+    <div id="tiket" class="footer-newsletter">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                    <h4>Cari Tiket</h4>
+                    <h1>Cari status pelayanan yang sudah anda kirim</h1>
                 </div>
                 <div class="col-lg-6">
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
+                    <form id="cari" action="" method="get">
+                        @csrf
+                        <input id="kode_tiket" type="text" name="kode_tiket" style="width: 100%; height: 40px">
+                        <input type="submit" value="Cari">
                     </form>
                 </div>
             </div>
         </div>
-    </div> --}}
+    </div>
 
     <div class="footer-top">
         <div class="container">
@@ -93,4 +95,20 @@
     </div>
 </footer><!-- End Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+<script>
+    $('#cari').submit(function() {
+        var value = $("input[name='kode_tiket'").val();
+        var code = value.slice(0, 3);
+        switch (code) {
+            case 'SKU':
+                $(this).attr('action', "{{ route('sku.search') }}");
+                break;
+            case 'LPR':
+                $(this).attr('action', "{{ route('lapor.search') }}");
+                break;
+        }
+    });
+</script>
+
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+        class="bi bi-arrow-up-short"></i></a>

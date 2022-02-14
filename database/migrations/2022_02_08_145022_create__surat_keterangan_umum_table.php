@@ -16,6 +16,7 @@ class CreateSuratKeteranganUmumTable extends Migration
         Schema::create('tb_surat_keterangan_umum', function (Blueprint $table) {
             $table->id('id');
             $table->string('nama_lengkap');
+            $table->enum('gender', ['laki-laki', 'perempuan']);
             $table->string('no_hp');
             $table->string('tempat_lahir');
             $table->date('tanggal_lahir');
@@ -24,10 +25,10 @@ class CreateSuratKeteranganUmumTable extends Migration
             $table->string('pekerjaan');
             $table->string('tempat_tinggal');
             $table->string('nik');
-            $table->string('ktp');
-            $table->string('surat_kk');
+            $table->string('ktp')->nullable();
+            $table->string('surat_kk')->nullable();
             $table->enum('status_kawin', ['Belum Kawin', 'Kawin', 'Cerai Hidup', 'Cerai Mati']);
-            $table->string('keperluan');
+            $table->string('keperluan')->nullable();
             $table->enum('status', ['proses', 'selesai', 'perbaiki']);
             $table->string('keterangan_lain')->nullable();
             $table->string('catatan')->nullable();

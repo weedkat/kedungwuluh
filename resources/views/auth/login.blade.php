@@ -93,16 +93,17 @@
             <div class="row justify-content-center" style="margin-top: 10%">
                 <div class="col-md-6 col-lg-4">
                     <div class="login-wrap p-0">
-                        <h3 class="mb-4 text-center"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
+                        <h3 class="mb-4 text-center" onclick="location.href='/'" style="cursor: pointer;"><img src="{{ url('images/logo_banyumas.png') }}" alt=""
                                 style="max-height: 40px"> KEDUNGWULUH</h3>
-                        <form method="POST" action="{{route('login')}}" class="signin-form">
+                        <form method="POST" action="{{ route('login') }}" class="signin-form">
                             @csrf
                             <div class="form-group">
-                                <input id="email" name="email" type="text" class="form-control" placeholder="Email" required />
+                                <input id="email" name="email" type="text" class="form-control" placeholder="Email"
+                                    required />
                             </div>
                             <div class="form-group">
-                                <input id="password" name="password" type="password" class="form-control" placeholder="Password"
-                                    required />
+                                <input id="password" name="password" type="password" class="form-control"
+                                    placeholder="Password" required />
                                 <span toggle="#password-field"
                                     class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            </div>
+        </div>
     </section>
 
     <script src="{{ url('login-form-20/js/jquery.min.js') }}"></script>

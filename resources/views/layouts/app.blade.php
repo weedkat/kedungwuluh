@@ -123,6 +123,7 @@
                     <li><a class="active" href="#">Home</a></li>
                     <li><a href="#pelayanan">Pelayanan</a></li>
                     <li><a href="/peta">Map</a></li>
+                    <li><a href="#tiket">Tiket</a></li>
                     {{-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
                             <li><a href="#">Drop Down 1</a></li>
@@ -175,7 +176,6 @@
     <!-- Vendor JS Files -->
     <script src="{{ url('moderna/assets/vendor/purecounter/purecounter.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/aos/aos.js') }}"></script>
-    <script src="{{ url('moderna/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
     <script src="{{ url('moderna/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
